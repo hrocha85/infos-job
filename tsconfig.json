@@ -7,7 +7,10 @@
     "module": "esnext",
     "allowJs": true,
     "isolatedModules": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "outDir": "./dist", // Ainda necessário para outras ferramentas
+    "rootDir": "./src",
+    "noEmit": true // Desativa a emissão de arquivos pelo TypeScript
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
